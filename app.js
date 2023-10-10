@@ -37,7 +37,7 @@ const limiter = expressRateLimit({
 app.use(limiter)
 
 //database connection
-let uri = "mongodb+srv://SulTan:M3h3d0630@cluster0.i2rbwsb.mongodb.net/todo"
+let uri = "mongodb://localhost:27017/todo"
 
 mongoose.connect(uri, {autoIndex:true} , { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
